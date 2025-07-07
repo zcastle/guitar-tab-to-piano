@@ -1,6 +1,6 @@
 {
   "name": "guitar-tab-to-piano",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convierte tablaturas de guitarra en notas de piano agrupadas y alineadas.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
