@@ -1,0 +1,31 @@
+{
+  "name": "guitar-tab-to-piano",
+  "version": "1.0.0",
+  "description": "Convierte tablaturas de guitarra en notas de piano agrupadas y alineadas.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "guitar",
+    "tablature",
+    "tab",
+    "piano",
+    "music",
+    "conversion",
+    "notes",
+    "music-theory"
+  ],
+  "author": "jc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zcastle/guitar-tab-to-piano.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.5.0"
+  }
+}
