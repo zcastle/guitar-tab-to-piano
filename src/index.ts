@@ -1,5 +1,22 @@
 // guitar-tab-to-piano/src/index.ts
 
+/**
+ * Convierte tablaturas de guitarra en una representación textual de notas de piano.
+ *
+ * @example
+ * const tab = `
+ * e|--0--2--2---------0
+ * B|--1--2--3--1-3-----
+ * G|--0--3--2----------
+ * D|--2--4-------------
+ * A|--3--4-------------
+ * E|--0--2------------0
+ * `;
+ * const result = convertTabToNotes(tab);
+ * console.log(result.original);
+ * console.log(result.upper);
+ * console.log(result.lower);
+ */
 export function convertTabToNotes(tabText: string) {
   const tuning: Record<string, number> = {
     'E': 40, 'A': 45, 'D': 50, 'G': 55, 'B': 59, 'e': 64
