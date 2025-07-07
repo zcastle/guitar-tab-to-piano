@@ -45,13 +45,12 @@ E|--0--2------------0
   <pre id="output"></pre>
 
   <script type="module">
-    import { convertTabToNotes } from './dist/index.js';
+    import { convertTabToNotes } from '../dist/index.js';
 
     window.convert = function () {
       const tabText = document.getElementById('tabInput').value;
       const result = convertTabToNotes(tabText);
-      document.getElementById('output').textContent =
-        `🎼 Original:\n${result.original}\n\n🎹 Upper:\n${result.upper}\n\n🎹 Lower:\n${result.lower}`;
+      document.getElementById('output').textContent = `🎼 Original:\n${result.original}\n\n🎹 Upper:\n${result.upper}\n\n🎹 Lower:\n${result.lower}`;
     }
   </script>
 </body>

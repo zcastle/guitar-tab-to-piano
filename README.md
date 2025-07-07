@@ -14,11 +14,11 @@ npm install guitar-tab-to-piano
 
 ## 🧠 ¿Qué hace?
 
-* Lee una tablatura de guitarra (6 cuerdas).
-* Convierte cada traste a su nota correspondiente (`A`–`G#`).
-* Agrupa notas por tiempo (o columnas).
-* Separa las notas agudas (`e`, `B`, `G`) de las graves (`D`, `A`, `E`).
-* Muestra acordes (3 o más notas simultáneas) entre paréntesis.
+- Lee una tablatura de guitarra (6 cuerdas).
+- Convierte cada traste a su nota correspondiente (`A`–`G#`).
+- Agrupa notas por tiempo (o columnas).
+- Separa las notas agudas (`e`, `B`, `G`) de las graves (`D`, `A`, `E`).
+- Muestra acordes (3 o más notas simultáneas) entre paréntesis.
 
 ---
 
@@ -40,9 +40,9 @@ const result = convertTabToNotes(tab);
 
 console.log("🎼 Tablatura original:");
 console.log(result.original);
-console.log("🎹 Línea superior (notas agudas):");
+console.log("🎹 Mano derecha:");
 console.log(result.upper);
-console.log("🎹 Línea inferior (notas graves):");
+console.log("🎹 Mano izquierda:");
 console.log(result.lower);
 ```
 
@@ -59,9 +59,9 @@ D|--2--4-------------
 A|--3--4-------------
 E|--0--2------------0
 
-🎹 Línea superior:
+🎹 Mano derecha:
  (E-C-G)-(F#-D#-A#)-(F#-F-A)-(D#)        (E)     
-🎹 Línea inferior:
+🎹 Mano izquierda:
  (E-A-C)  (F#-A#-C#)   (F#-B-D)
 ```
 
@@ -71,11 +71,11 @@ E|--0--2------------0
 
 ### `convertTabToNotes(tabText: string): { original, upper, lower }`
 
-| Propiedad  | Tipo   | Descripción                        |
-| ---------- | ------ | ---------------------------------- |
-| `original` | string | La tablatura original sin procesar |
-| `upper`    | string | Notas de las cuerdas e, B, G       |
-| `lower`    | string | Notas de las cuerdas D, A, E       |
+| Propiedad | Tipo     | Descripción                                     |
+|-----------|----------|-------------------------------------------------|
+| `original` | string   | La tablatura original sin procesar             |
+| `upper`    | string   | Notas de las cuerdas e, B, G (mano derecha)    |
+| `lower`    | string   | Notas de las cuerdas D, A, E (mano izquierda)  |
 
 ---
 
