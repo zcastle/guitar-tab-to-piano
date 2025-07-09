@@ -79,6 +79,32 @@ E|--0--2------------0
 
 ---
 
+## 📦 Build minificado
+
+También puedes generar una versión minificada de la librería con:
+
+```bash
+npm run build:min
+```
+
+Esto crea un archivo optimizado en:
+
+```
+dist/guitar-tab-to-piano.min.js
+```
+
+Ideal para usar directamente en navegadores o distribuir como módulo ligero.
+
+---
+
+## 💖 Donaciones
+
+¿Te fue útil esta herramienta? Puedes invitarme un café:
+
+[☕ Invítame un café](https://coff.ee/zcastle)
+
+---
+
 ## 🧑‍💻 Autor
 
 Hecho por [@zcastle](https://github.com/zcastle) con ❤️ y algo de café.
